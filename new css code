@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Navbar styling */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: #3e97ff;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+#navbar img {
+  border-radius: 7px;
+}
+
+/* Navigation menu */
+#navbtn {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+#navbtn li {
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Hamburger icon hidden on large screens */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Main body image */
+.mainbodyimg {
+  width: 100%;
+  height: 500px;
+  filter: blur(3px);
+  object-fit: cover;
+}
+
+/* Content overlay */
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 25px;
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Container for image + content */
+.imgebody {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  #navbtn {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #3e97ff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px 0;
+    z-index: 999;
+  }
+
+  #navbtn.show {
+    display: flex;
+  }
+
+  #navbtn li {
+    text-align: center;
+    padding: 10px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .content {
+    width: 90%;
+    padding: 20px;
+    font-size: 14px;
+  }
+}
+
+#foundersvoice {
+  width: 100vw;
+  background-color: #9370DB;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 98vh;
+}
+
+.imgcontainer img {
+  height: 21rem;
+
+}
+
+.note {
+  width: 60vw;
+  background-color: black;
+  opacity: 0.5;
+  color: aliceblue;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foundersvoice h1{
+  display: flex;
+  justify-content: center;
+
+}
+
+.imgcontainer {
+  display: flex;
+  justify-content: space-around;
+  height: 365px;
+  align-items: center;
+}
+
+
